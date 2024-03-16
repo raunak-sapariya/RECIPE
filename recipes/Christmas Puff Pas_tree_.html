@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="CSS file.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .falling-apple{
+            height: 20%;
+            width: 200px;
+            right: 0;
+            
+        }
+        ul li::before{
+           content: "🍫";
+           }
+           
+
+    </style>
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <div><img class="logo" src="logo2.png" alt=""></div>
+       <div class="navbar-items"> 
+        <a  class="home">HOME</a>
+        <a  class="recipe">RECIPES</a>
+        <a class="about-us">ABOUT US</a>
+        <a class="contact-us">CONTACT US</a>
+        <div class="out-in-btn">Login</div>
+    </div>
+   </nav>
+   <div class="logout-warning">
+     <p class="warning-text">Are you sure?</p>
+     <button class="logout-yes">Yes</button>
+     <button class="logout-no">No</button>
+   </div>  
+   <div class="toblur">
+
+
+
+    <img src="tree.png" alt="" class="falling-apple">
+
+    <div class="content">
+        <br><br><br>
+        <div class="heading"><b>Christmas Puff Pas'tree'</b></div><br><br><br>
+        <div class="image">
+        <img src="puff.jpg" alt="apple pie" class="applepie">
+        </div>
+        <div class="desc"> 
+            Twist out of a bind with this quick bake nutella christmas tree.
+             Delicious chocolate and hazelnut spread between layers of flaky pastry will be ready to please your guests and santa too!
+      
+        </div>
+        <div class="time">
+            <b>Prep Time:</b> 10 mins <br>
+            <b>Bake Time:</b> 17 mins <br>
+            <b>Total Time:</b> 30 mins 
+        </div>
+        <div class="servings"><br>
+            <b>Servings:</b> 12 people
+        </div>
+       
+        
+        <br><br><br>
+        <div class="topichead">
+            Ingredients:
+        </div>
+        <div class="ingredients">
+            <br>
+            <ul>
+               <li> 2 pre-rolled puff pastry sheets</li>
+               <li>200g nutella or any chocolate hazelnut spread</li>
+               <li>25g butter, melted</li>
+            </ul>
+            
+        <br><br>
+        <div class="topichead">
+            Directions:
+        </div>
+        <div class="directions">
+            
+            <ol>
+                <li>Preheat your oven to 200C and line a large baking tray with parchment paper.</li>
+                <li>Remove the sheets of puff pastry from their packaging and place one on top of the other on the prepared baking sheet.</li>
+                <li>with the short side of the pastry facing you, cut a diagonal line from the center of the top to the right corner of the bottom of the pastry. Repeat for the left side. </li>
+                <li>Remove the excess triangles of pastry from the baking sheet and set aside. </li>
+                <li>Remove the top layer of pastry and place it gently to the side, then spread the nutella over the entire surface of the bottom sheet of pastry.</li>
+                <li>Place the top sheet of pastry on top of the nutella covered bottom piece of pastry, make sure that the edges are all aligned.</li>
+                <li>Cut two rectangles out of the bottom of your layered pastry leaving a 1x1 in square in the middle for the trunk of the tree. Remove the rectangles and set them to the side.</li>
+                <li>Starting from the right side, cut 1 inch horizontal strips up to the top of the pastry. Make sure you leave a 1 inch uncut section in the middle to hold everything together.  Repeat the cuts exactly the same on the left side. </li>
+                <li>Grab the bottom two strips of pastry on the right and left sides, and twist them clockwise until you can see ribbons of nutella. Repeat this process for every strip until you reach the top. </li>
+                <li>Using a pastry brush, butter all of the exposed areas of pastry to help them brown evenly. </li>
+                <li>Place the pastry in the oven for 15-17 minutes, or until golden brown on top. </li>
+                <li>Let cool slightly before serving. </li>
+            </ol>
+            
+            
+            
+            <div id="title"><b>Tips:</b></div>
+            <ol>
+                <li>If you don't like nutella then you can fill the layers with jam or cheese!</li>
+                <li>Use the excess pieces of puff pastry to make baubles or a star to decorate your tree. </li>
+            </ol>
+        </div>
+    </div>
+</div>
+<script src="javascriptforall.js"></script>
+<script>
+    let apple=document.querySelector(".falling-apple")
+    console.log(window.scrollY)
+    window.addEventListener("scroll",()=>{
+        if (window.scrollY>1000) {
+            apple.classList+=" fallen-apple"
+        }
+        else{
+            apple.classList="falling-apple"
+        }
+
+    })
+
+</script>
+</body>
+
+</html> 

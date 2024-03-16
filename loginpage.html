@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+   
+    <link rel="stylesheet" href="loginpage.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="background"></div>  
+    <div class="login-page-container">
+        <section class="login-page">
+          <div class="login-container">
+
+            <div class="create-account">
+              
+                <p class="createaccount-heading">Create Account</p>
+                <p class="createaccount-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nihil placeat ratione. Dolores consectetur neque aliquid eos dolor laborum assumenda.</p>
+                <div class="fullname">
+                    <input id="firstname" type="text" placeholder="First Name" required>
+                    <input id="lastname" type="text" placeholder="Last Name" required>
+                </div>
+                <input class="create-email" id="create-email" type="email" placeholder="Email" required>
+                <input class="create-password" id="create-password" type="password"  placeholder="Password" required>
+                <div id="eye-button-create">
+                  <img id="eye-image-create" class="eye-image-create" src="picture/eyeclose.png" alt="">
+                  <img class="eye-image-create" src="picture/eye.png" alt="">
+                </div>
+                
+                <div class="wrong-info">
+                  
+                </div>
+                <button class="createAccount">CREATE ACCOUNT</button>
+                <p class="already-member">Already have an account?</p>
+            </div> 
+       
+            
+            <div class="login-detail">
+              <p class="login-heading">LOGIN TO CONTINUE</p>
+              <p class="login-text-detail">
+                Lorem ipsum dolor sit Lorem ipsum dolor sit. Lorem, ipjh amet as,
+                autem? Ipsa, reprehenderit odio? Asperiores aut facilis corporis
+                consequuntur maiores 
+              </p>
+              
+              <input type="email" name="email" id="email" placeholder="Email" autocomplete="off"/>
+              <input type="password" name="password" id="password"  placeholder="Password"/>
+              <div id="eye-button">
+              <img id="eye-image" class="eye-image" src="picture/eyeclose.png" alt="">
+              <img class="eye-image" src="picture/eye.png" alt="">
+            </div>
+              <div id="wrong-info" class="ifwrong"></div>
+              <div id="blank-info"></div>
+              
+              <div class="signed-in-container">
+                <div class="checkbox">
+                  <input type="checkbox" /><span class="signed-in-text">
+                    Keep me signed in</span>
+                </div>
+                <p id="create-account" class="create-account-btn">Not a Member?</p>
+              </div>
+             
+              <button id="login-button" class="login-button"><span class="login-text">LOGIN</span><img class="loading-image" src="picture/loading.png" alt=""></button>
+
+            </div>
+  
+          </div>
+          
+        </section>
+        
+        <div class="login-image">
+            <img id="login-image" src="" alt="">
+        </div>
+      </div>
+      <script src="USERS.js"></script>
+      <script src="loginpage.js"></script>
+      
+      
+</body>
+</html>
+

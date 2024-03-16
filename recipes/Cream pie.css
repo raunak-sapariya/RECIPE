@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Khand:wght@500&family=Noto+Serif+Khojki&family=Nunito+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kolker+Brush&family=Sono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kolker+Brush&family=Sono:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Condensed:wght@200&family=Indie+Flower&family=Kolker+Brush&family=Lobster&family=Montserrat:wght@800&family=Nerko+One&family=Rubik+Microbe&family=Sono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Condensed:wght@200&family=Indie+Flower&family=Kolker+Brush&family=Lobster&family=Montserrat:wght@100&family=Nerko+One&family=Righteous&family=Rubik+Microbe&family=Sono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Condensed:wght@200&family=Indie+Flower&family=Khand:wght@500&family=Kolker+Brush&family=Lobster&family=Montserrat:wght@100&family=Nerko+One&family=Righteous&family=Rubik+Microbe&family=Sono:wght@500&display=swap');
+
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.541),rgba(0, 0, 0, 0.492)),url(backgroundimg.jpg);
+    background-size: 300px;
+    animation: back 8s linear infinite;
+
+}
+@keyframes back {
+    0%{
+        background-position: top;
+    }
+    100%{
+        background-position: bottom;
+    }
+}
+::-webkit-scrollbar{
+    display: white;
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border:2px solid white;
+    
+}
+
+.body{
+    position: relative;
+}
+.to-blur{
+    height: 0;
+}
+
+.navbar{
+    display: flex;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    background-color:black;
+    border-bottom: 5px solid rgb(198, 155, 48);
+    font-family: sono;
+    position: fixed;
+    top:0;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+    transition: transform 0.3s linear;
+    
+
+}
+.logo{
+    margin-top: 50px;
+    width: 260px;
+    height: 235px;
+}
+.navbar-items{
+    
+    display: flex;
+    gap:30px;
+    align-items: center;
+}
+.navbar-items a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    word-spacing: -5px;
+}
+
+.out-in-btn{
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    right: 50px;
+    border: 2px solid rgb(198, 155, 48);
+    padding:5px 10px;
+}
+.out-in-btn:hover{
+
+    box-shadow: 0px 5px 8px rgba(255, 255, 255, 0.347);
+
+}
+.logout-warning{
+    box-shadow: 10px 10px 10px black;
+
+    position: fixed;
+    z-index: 10;
+    transform: translateX(-1000px);
+    top:30%;
+    left:calc(50% - 200px);
+    height: 150px;
+    width: 400px;
+    background-color: rgb(255, 236, 142);
+    border-radius: 5px;
+}
+.warning-text{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;    
+}
+.logout-yes,.logout-no{
+    padding: 5px 15px;
+    margin-left: 90px;
+    margin-top: 30px;
+    background-color: transparent;
+    border: 2px solid rgb(198, 155, 48);
+    border-radius: 5px;
+}
+.logout-yes:hover,.logout-no:hover{
+    background-color: rgb(255, 236, 187);
+}
+
+
+
+
+.home,.recipe,.about-us,.contact-us{
+    position: relative;
+}
+.home::after,.recipe::after,.about-us::after,.contact-us::after{
+position: absolute;
+bottom: 0;
+left: 0;
+content: "";
+width:0;
+height: 2px;
+background-color: rgb(255, 99, 71);
+transition: width 0.2s linear;
+}
+.home:hover::after{
+    width: 38.6px;
+}
+.recipe:hover::after{
+    width: 70.5px;
+}
+.about-us:hover::after{
+    width:75px;
+}
+.contact-us:hover::after{
+  width:95px;
+}
+.content{
+    position: absolute;
+    left: 200px;
+    right: 200px;
+    top: 80px;
+    overflow-y: scroll;
+    background-color: rgb(235, 235, 235);
+    outline: 2px solid black;
+    border: 70px solid rgb(235, 235, 235);
+    box-shadow: 0px 0px 30px black;
+}
+.heading{
+    font-size: 50px;  
+    font-family: 'Khand', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-align: center;
+    border-bottom: 5px solid rgba(73, 71, 71, 0.419);
+}
+.applepie{
+    width: 450px;
+    height: 400px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px 10px rgb(148,151,146);
+}
+.desc{
+    position: absolute;
+    top: 190px;
+    left: 490px;
+    word-spacing: 2px;
+    letter-spacing: 1.2px;
+    font-size: 18;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.time{
+    position: absolute;
+    z-index: 2;
+    top: 340px;
+    left: 490px;
+    font-size: 18;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.servings{
+    position: absolute;
+    z-index: 2;
+    top: 430px;
+    left: 490px;
+    font-size: 18;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.size{
+    position: absolute;
+    z-index: 2;
+    top: 460px;
+    left: 492px;
+    font-size: 18;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.equipments{
+    position: absolute;
+    z-index: 2;
+    top: 500px;
+    left: 492px;
+    font-size: 18;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.topichead{
+    font-size: 35px;  
+    font-family: 'Noto Serif Khojki', serif;
+    letter-spacing: 1.3px;
+}
+li{
+    font-size: 18;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.directions{
+    line-height: 35px;
+    padding-bottom: 50px;
+    border-bottom: 5px solid rgba(73, 71, 71, 0.419);
+}
+ul li::before{
+    content: "🥧";
+}
+ul li{
+    list-style: none;
+}
+.falling-pie{
+    position: fixed;
+    z-index: 9;
+    right:10px;
+    width: 120px;
+    top:-100px;
+
+    transition: translate 2s linear,rotate 2s linear;
+}
+.fallen-pie{
+    rotate: 360deg;
+    translate: 0 728px;
+}

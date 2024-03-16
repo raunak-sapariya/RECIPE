@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="BlackBerry Pie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div><img class="logo" src="logo2.png" alt=""></div>
+       <div class="navbar-items"> 
+        <a class="home">HOME</a>
+          <a class="recipe">RECIPES</a>
+          <a class="about-us">ABOUT US</a>
+          <a class="contact-us">CONTACT US</a>
+        <div class="out-in-btn">Login</div>
+       </div>
+      </nav>
+      <div class="logout-warning">
+        <p class="warning-text">Are you sure?</p>
+        <button class="logout-yes">Yes</button>
+        <button class="logout-no">No</button>
+      </div>
+    <img src="blackberry.png" alt="" class="falling-berry">
+    <div class="content">
+        <br><br><br>
+        <div class="heading"><b> BlackBerry Pie </b></div><br><br><br> 
+        <div class="image">
+        <img src="blackberrypiemainimg.jpg" alt="apple pie" class="applepie">
+        </div>
+        <div class="desc"> 
+            The best blackberry pie ever. No kidding! All butter crust, loads of blackberries, spiced with a little lemon, cinnamon, 
+            and almond extract. And the crust? Well, in my opinion, homemade pie is just an excuse to eat homemade butter crust.
+        </div>
+        <div class="time">
+            <b>Prep Time:</b> 20 mins <br>
+            <b>Cook Time:</b> 1hr <br>
+            <b>Filling Rest Time:</b> 30mins <br>
+            <b>Total Time:</b> 1hr 50mins 
+        </div>
+        <div class="servings">
+            <b>Servings:</b> 8 people
+        </div>
+        <div class="size">
+            <b>Yield: </b> 19 Inch Pie 
+        </div>
+        <div class="equipments">
+            <b> Equipments: </b> pie plate , rolling pin , parchment paper , whisk , spatula, pie weights/dried beans , 
+                                 pie shield/foil , mixing bowls , measuring cups and spoons
+        </div>
+        <br><br><br>
+        <div class="topichead">
+            Ingredients
+        </div>
+        <div class="ingredients">
+            <ul>
+                <li> 5 to 6 cups blackberries, rinsed, picked clean, patted dry  </li>
+                <li> 1/2 to 3/4 cup sugar </li>
+                <li> 1 teaspoon lemon juice </li>
+                <li> 1 teaspoon lemon zest </li>
+                <li> 1/2 teaspoon ground cinnamon </li>
+                <li> 1/4 teaspoon almond extract </li>
+                <li> 4 to 6 tablespoons cornstarch, flour, or ground quick cooking instant tapioca  </li>  
+            </ul>
+        </div>
+        <br><br>
+        <div class="topichead">
+            Directions
+        </div>
+        <div class="directions">
+            <ol>
+                <li>
+                    Place the blackberries, sugar, cornstarch (or flour or ground instant tapioca), lemon zest, lemon juice, cinnamon, 
+                    and almond extract in a large bowl. Gently fold the berries until they are all well coated with sugar. 
+                    Let sit for 30 minutes.
+                </li>
+                <li>
+                    Place the rack in the middle of the oven.
+                </li>
+                <li>
+                    You should have two disks of pie dough, one for the bottom crust, one for the top crust.<br>
+                    Roll out one of the disks of pie dough on a lightly floured surface to a 12-inch diameter if you are using a 9-inch pie pan, 
+                    or 13-inch diameter if you are using a 10-inch pan.<br>
+                    Line the bottom of your pie pan with the dough. Chill in the refrigerator while you roll out the top crust.
+                </li>
+                <li>
+                    Roll out the second disk of pie dough for the top crust. You can keep the top crust as one solid disc or cut the 
+                    dough into strips for a lattice crust.
+                </li>
+                <li>
+                    Spoon the berry mixture into the dough-lined pie dish. For a lattice top, weave strips of pie dough over the top of the 
+                    fruit-filled pie dish.<br>
+                    For a solid top, place the second rolled-out pie dough crust on top of the pie. Press ends of strips into the rim of the 
+                    bottom crust. Use scissors to trim the edges to 1/2-inch from the outer edge of the pie pan.<br>
+                    Fold the edges back over themselves and use your fingers to crimp to seal the edges. If you are using a solid top crust, 
+                    score the top several times with a sharp knife to create air vents for the steam to escape.
+                </li>
+                <li>
+                    Place the pie on the middle rack of the oven. Put a baking sheet on the lower rack to catch any juices that might bubble 
+                    out of the pie while it's cooking.<br>
+                    Bake the pie in two stages. First bake it at 400°F for 30 minutes.<br>
+                    Then place a sheet of aluminum foil over the pie to protect the edges and tops from getting too burnt. 
+                    (A pie protector is quite useful here.) Reduce the heat to 350°F and bake for an additional 30 minutes, 
+                    or until the crust has browned and the filling is bubbly.<br>
+                    Remove from oven and place on a wire rack. Cool completely before serving.
+                </li>
+            </ol>
+        </div>
+    </div>
+    <script src="javascriptforall.js"></script>
+    <script>
+        let pie=document.querySelector(".falling-berry")
+        console.log(window.scrollY)
+        window.addEventListener("scroll",()=>{
+            if (window.scrollY>1000) {
+                pie.classList+=" fallen-berry"
+            }
+            else{
+                pie.classList="falling-berry"
+            }
+
+        })
+    </script>
+    </body>
+
+</html> 

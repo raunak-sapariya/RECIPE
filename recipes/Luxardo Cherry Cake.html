@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="CSS file.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .falling-apple{
+            height: 110px;
+            width: 150px;
+            right: 0;
+            
+        }
+        ul li::before{
+           content: "🍰";
+           }
+           
+
+    </style>
+    </style>
+</head>
+
+
+<body>
+   
+    <nav class="navbar">
+        <div><img class="logo" src="logo2.png" alt=""></div>
+       <div class="navbar-items"> 
+        <a  class="home">HOME</a>
+        <a  class="recipe">RECIPES</a>
+        <a class="about-us">ABOUT US</a>
+        <a class="contact-us">CONTACT US</a>
+        <div class="out-in-btn">Login</div>
+    </div>
+   </nav>
+   <div class="logout-warning">
+     <p class="warning-text">Are you sure?</p>
+     <button class="logout-yes">Yes</button>
+     <button class="logout-no">No</button>
+   </div>  
+   <div class="toblur">
+
+    <img src="wine.png" alt="" class="falling-apple">
+
+
+
+    <div class="content">
+        <br><br><br>
+        <div class="heading"><b>Champagne & Luxardo Cherry Cake</b></div><br><br><br>
+        <div class="image">
+        <img src="cake5.png" alt="apple pie" class="applepie">
+        </div>
+        <div class="desc"> 
+            Give your halloween party the scariest centerpiece with this Bloody Red Velvet Cake. 
+            Decadent sponges covered in classic cream cheese frosting make this cake too tempting to be afraid of. 
+        </div>
+        <div class="time">
+            <b>Prep Time:</b> 25 mins <br>
+            <b>Cook Time:</b> 25-30 mins <br>
+            <b>Total Time:</b> 1hr 
+        </div>
+        <div class="servings">
+            <b>Servings:</b> 6 people
+        </div>
+       
+        <div class="equipments">
+            <b> Equipments: </b> stand or hand mixer and 3 x 6in cake tins
+        </div>
+        <br><br><br>
+        <div class="topichead">
+            Ingredients:
+        </div>
+        <div class="ingredients">
+            <ul>
+                <li> 310g self raising Flour  </li>
+                <li> 8g cocoa powder  </li>
+                <li> 115g butter  </li>
+                <li> 200g sugar </li>
+                <li> 2 eggs   </li>
+                <li> 200g sunflower oil  </li>
+                <li> 3 tablespoons milk or Buttermilk  </li>
+                <li>11g vanilla extract</li>
+                <li>5g red food colouring</li>
+                <li>1 teaspoon bicarbonate soda </li>
+                <br><br>
+                <li>115g  unsalted Butter</li>
+                <li>200g cream Cheese</li>
+                <li>1 vanilla extract optional </li>
+                <li>375g icing  sugar</li>
+                <li>¼ salt optional </li>
+            </ul>
+        </div>
+        <br><br>
+        <div class="topichead">
+            Directions:
+        </div>
+        <div class="directions">
+            <div id="title"><u>Sponge </u></div>
+            <ol>
+                <li>Preheat your oven to 180C</li>
+                <li>Mix together the flour, cocoa and bicarbonate soda into a bowl then put aside</li>
+                <li>Combine butter and sugar in a new clean mixing bowl</li>
+                <li>Add eggs one at a time. Mixing until fully incorporated each time. </li>
+                <li>Mix in the oil, buttermilk, vanilla extract </li>
+                <li>Grab your dry ingredients and sieve into the bowl then mix</li>
+                <li>Add to cake tins and bake for 25-30 mins </li>
+                <li>Check with a skewer to see if cakes are ready; if it comes out gooey it needs more time in the oven.</li>
+                <li>Place the butter in the mixer</li>
+                <li>Add the cream cheese and combine till mixture is incorporated (~3 minutes).</li>
+                <li>Gradually add icing sugar using your spatula mix it in.</li>
+                <li>Once you’ve added all your icing sugar, turn your electric mixer to medium speed and mix until the cream cheese icing thickens. </li>
+                <li>Add red food colouring to your Icing to make it nice and bloody!</li>
+            </ol>
+           
+            <div id="title"><u>Assembly:</u></div>
+            <ol>
+               <li>Grab your cake board place it on your turntable </li>
+               <li>Put a spoon full of buttercream on the bottom on your board to stop your cake from sliding so you're ready to start stacking</li>
+               <li>Place one sponge in the middle board and add in your bloody cream cheese filling then stack the second layer. Repeat for the third layer.</li>
+               <li>Now coat the cake in your cream cheese icing and place it in the fridge to firm up.</li>
+               <li>Add knife slices around your cake to give it a scary bloody effect or melt down some candy melts to make dangerous shards. </li> 
+            </ol>
+            <div id="title"><b>Tips:</b></div>
+            <ol>
+                <li>Don't overmix your batter or your cake will be dry and tough.</li>
+                <li>Make sure your butter and cream cheese are completely smooth before adding in the icing sugar. No one wants a lumpy icing!</li>
+                <li>For bold decorations, get some candy melts and make them into shards for a bit of extra danger. </li>
+            </ol>
+        </div>
+    </div>
+</div>
+<script src="javascriptforall.js"></script>
+<script>
+    let apple=document.querySelector(".falling-apple")
+    console.log(window.scrollY)
+    window.addEventListener("scroll",()=>{
+        if (window.scrollY>1000) {
+            apple.classList+=" fallen-apple"
+        }
+        else{
+            apple.classList="falling-apple"
+        }
+
+    })
+
+</script>
+</body>
+
+</html> 

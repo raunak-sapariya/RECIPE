@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="CSS file.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div><img class="logo" src="logo2.png" alt=""></div>
+        <div class="navbar-items">
+            <a class="home">HOME</a>
+            <a class="recipe">RECIPES</a>
+            <a class="about-us">ABOUT US</a>
+            <a class="contact-us">CONTACT US</a>
+            <div class="out-in-btn">Login</div>
+        </div>
+    </nav>
+    <div class="logout-warning">
+        <p class="warning-text">Are you sure?</p>
+        <button class="logout-yes">Yes</button>
+        <button class="logout-no">No</button>
+    </div>
+    <img src="appleimg.png" alt="" class="falling-apple">
+    <div class="content">
+        <br><br><br>
+        <div class="heading"><b> Apple Pie </b></div><br><br><br>
+        <div class="image">
+            <img src="apple pie.jpg" alt="apple pie" class="applepie">
+        </div>
+        <div class="desc">
+            I have never seen another one quite like it.
+            It will always be my favorite and has won me several first place prizes in local competitions.
+            I hope it becomes one of your favorites as well! Serve hot or cold at family dinners or during the holidays,
+            topped with whipped cream or ice cream, or alongside a slice of Cheddar cheese.
+        </div>
+        <div class="time">
+            <b>Prep Time:</b> 30 mins <br>
+            <b>Cook Time:</b> 1hr <br>
+            <b>Total Time:</b> 1hr 30mins
+        </div>
+        <div class="servings">
+            <b>Servings:</b> 8 people
+        </div>
+        <div class="size">
+            <b>Yield: </b> 19 Inch Pie
+        </div>
+        <div class="equipments">
+            <b> Equipments: </b> pie plate , rolling pin , parchment paper , whisk , spatula, pie weights/dried beans ,
+            pie shield/foil , mixing bowls , measuring cups and spoons
+        </div>
+        <br><br><br>
+        <div class="topichead">
+            Ingredients
+        </div>
+        <div class="ingredients">
+            <ul>
+                <li> 8 Small Apples </li>
+                <li> 1/2 cup unsalted butter </li>
+                <li> 3 tablespoon all-purpose flour </li>
+                <li> 1/2 cup white sugar </li>
+                <li> 1/2 cup packed blown sugar </li>
+                <li> 1/4 cup water </li>
+                <li> 1 (9 Inch) double-crust pie pastry, thawed </li>
+            </ul>
+        </div>
+        <br><br>
+        <div class="topichead">
+            Directions
+        </div>
+        <div class="directions">
+            <ol>
+                <li>
+                    Peel and core apples, then thinly slice. Set aside.
+                </li>
+                <li>
+                    Preheat the oven to 425 degrees F (220 degrees C).
+                </li>
+                <li>
+                    Melt butter in a saucepan over medium heat. Add flour and stir to form a paste; cook until fragrant,
+                    about 1 to 2 minutes.
+                    Add both sugars and water; bring to a boil. Reduce the heat to low and simmer for 3 to 5 minutes.
+                    Remove from the heat.
+                </li>
+                <li>
+                    Press one pastry into the bottom and up the sides of a 9-inch pie pan. Roll out remaining pastry so
+                    it will overhang
+                    the pie by about 1/2 inch. Cut pastry into eight 1-inch strips.
+                </li>
+                <li>
+                    Place sliced apples into the bottom crust, forming a slight mound. Lay four pastry strips vertically
+                    and evenly spaced over apples, using longer strips in the center and shorter strips at the edges.
+                </li>
+                <li>
+                    Make a lattice crust: Fold the first and third strips all the way back so they're almost falling off
+                    the pie.
+                    Lay one of the unused strips perpendicularly over the second and fourth strips, then unfold the
+                    first and
+                    third strips back into their original position.
+                </li>
+                <li>
+                    Fold the second and fourth vertical strips back. Lay one of the three unused strips perpendicularly
+                    over top.
+                    Unfold the second and fourth strips back into their original position.
+                </li>
+                <li>
+                    Repeat Steps 6 and 7 to weave in the last two strips of pastry. Fold and trim excess dough at the
+                    edges as necessary,
+                    and pinch to secure.
+                </li>
+                <li>
+                    Slowly and gently pour sugar-butter mixture over lattice crust, making sure it seeps over sliced
+                    apples.
+                    Brush some onto lattice, but make sure it doesn't run off the sides.
+                </li>
+                <li>
+                    Bake in the preheated oven for 15 minutes. Reduce the temperature to 350 degrees F (175 degrees C)
+                    and continue
+                    baking until apples are soft, 35 to 45 minutes.
+                </li>
+            </ol>
+        </div>
+    </div>
+    <script src="javascriptforall.js"></script>
+    <script>
+        let apple=document.querySelector(".falling-apple")
+        console.log(window.scrollY)
+        window.addEventListener("scroll",()=>{
+            if (window.scrollY>1000) {
+                apple.classList+=" fallen-apple"
+            }
+            else{
+                apple.classList="falling-apple"
+            }
+
+        })
+
+</script>
+</body>
+
+</html>

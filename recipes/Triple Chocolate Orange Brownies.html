@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="CSS file.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .falling-apple{
+            height: 20%;
+            width: 200px;
+            right: 0;
+            
+        }
+        ul li::before{
+           content: "🍫";
+           }
+           
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div><img class="logo" src="logo2.png" alt=""></div>
+       <div class="navbar-items"> 
+        <a class="home">HOME</a>
+        <a class="recipe">RECIPES</a>
+        <a class="about-us">ABOUT US</a>
+        <a class="contact-us">CONTACT US</a>
+        <div class="out-in-btn">Login</div>
+    </div>
+   </nav>
+   <div class="logout-warning">
+     <p class="warning-text">Are you sure?</p>
+     <button class="logout-yes">Yes</button>
+     <button class="logout-no">No</button>
+   </div>  
+   <div class="toblur">
+
+
+
+    <img src="choco.png" alt="" class="falling-apple">
+
+    <div class="content">
+        <br><br><br>
+        <div class="heading"><b>Chocolate Brownies</b></div><br><br><br>
+        <div class="image">
+        <img src="brown.jpg" alt="apple pie" class="applepie">
+        </div>
+        <div class="desc"> 
+            Chocolate and orange, a flavour pairing made in heaven. These indulgent and criminally 
+            chocolate filled brownies are the perfect way too enjoy the holiday season's favourite flavours!
+      
+        </div>
+        <div class="time">
+            <b>Prep Time:</b> 25 mins <br>
+            <b>Bake Time:</b> 30 mins <br>
+            <b>Total Time:</b> 55 mins 
+        </div>
+        <div class="servings"><br>
+            <b>Servings:</b> 12 people
+        </div>
+        <div class="equipments">
+            <b> Equipments: </b> 23x23cm baking tin and stand or hand mixer 
+        </div>
+    
+       
+        
+        <br><br><br>
+        <div class="topichead">
+            Ingredients:
+        </div>
+        <div class="ingredients">
+            <br>
+            <ul>
+               <li>200g dark chocolate ( roughly chopped)</li>
+               <li>100g terry’s chocolate orange (roughly chopped)</li>
+               <li>200g unsalted butter</li>
+               <li>4 large eggs</li>
+               <li>300g caster sugar</li>
+               <li>100g plain flour</li>
+               <li>25g cocoa powder</li>
+               <li>1 tsp cinnamon</li>
+               <li>Zest of 1 orange</li>
+               <li>300g terry orange (chopped)</li>
+               <li>1 tbsp orange flavoring</li>
+            </ul>
+            
+        <br><br>
+        <div class="topichead">
+            Directions:
+        </div>
+        <div class="directions">
+            
+            <ol>
+                <li>Preheat an oven to 180c/160c fan/gas mark 4 and line a 23x23 cm baking tray with  parchment paper</li>
+                <li>Add butter, dark chocolate and terry's chocolate orange (100g) to a heat proof bowl and place on top of a pan with 1 cm of simmering water. Melt the ingredients together, stirring until the chocolate and butter melt and combine, take the bowl of the heat and leave to cool</li>
+                <li>Whisk the eggs and sugar together using an electric hand whisk until pale and fluffy, about 5 minutes</li>
+                <li>You can tell when it's done by lifting up your whisk from the batter and seeing a ribbon of the mixture sitting on top of the batter for few seconds before disappearing into your mix.</li>
+                <li>Carefully stir the melted butter and chocolate into the egg mixture.</li>
+                <li>Then sift flour, cocoa powder and cinnamon into the egg and chocolate mixture, and fold it in until just combined.</li>
+                <li>Gently fold in the chopped chocolate orange, orange zest and orange flavoring into the batter.</li>
+                <li>Pour brownie batter into the lined baking tray.</li>
+                <li>Place in your preheated oven for 45- 50 minutes, until cooked then leave to cool and cut into squares. </li>
+            </ol>
+            
+            
+            
+            <div id="title"><b>Tips:</b></div>
+            <ol>
+                <li>Brownies are done when they don’t wobble and a toothpick is inserted and comes out mostly clean.</li>
+                <li>When melting chocolate and butter make sure to keep an eye on it and stir every 2 minutes to prevent chocolate burning.</li>
+                <li>For a more elevated look, melt some extra dark chocolate and drizzle it over the cut brownies with and extra slice of Terry's Chocolate Orange. </li>
+            </ol>
+        </div>
+    </div>
+</div>
+<script src="javascriptforall.js"></script>
+<script>
+    let apple=document.querySelector(".falling-apple")
+    console.log(window.scrollY)
+    window.addEventListener("scroll",()=>{
+        if (window.scrollY>1000) {
+            apple.classList+=" fallen-apple"
+        }
+        else{
+            apple.classList="falling-apple"
+        }
+
+    })
+
+</script>
+</body>
+
+</html> 
